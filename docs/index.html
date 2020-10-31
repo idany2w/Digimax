@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=1440, initial-scale=1.0" />
+		<meta name="viewport" content="width=1216, initial-scale=1.0" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Roboto:wght@400;500;700&display=swap"
 			rel="stylesheet"
@@ -12,15 +12,131 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container header__container">
-				<a class="header__logo">
-					<img src="img/dist/header__logo.svg" alt="" class="header__logo-img" />
-                </a>
-                <button class="btn header__btn">Закажите ваш билет</button>
-			</div>
-        </header>
-        <section id="hero"></section>
+        <section id="hero" class="hero">
+            <div class="hero__bg"></div>
+
+            <header class="header hero__header">
+                <div class="container header__container">
+                    <a class="header__logo" href="#home">
+                        <img src="img/dist/header__logo.svg" alt="Digimax" class="header__logo-img" />
+                    </a>
+                    <button class="btn header__btn">Закажите ваш билет</button>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-content hero__text-content">
+                            <h2 class="hero__caption">До луны и обратно</h2>
+                            <p class="hero__description">Задача организации, в особенности же курс на социально-ориентированный национальный проект позволяет оценить значение модели развития. </p>
+                        </div>
+                        <div class="btns hero__btns">
+                            <a href="#" class="btn btns__item">Подробнее о нас</a>
+                            <button class="btn btn_icon btns__item">
+                                <span class="btn__icon btn__icon_play"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="moon">
+                            <img class="moon__img" src="img/dist/moon.jpg" alt="Moon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="offers">
+            <div class="container">
+                <h3 class="section-title">Вы с нами?</h3>
+                <div class="tabs">
+                    <ul class="tabs__controls">
+                        <li class="tabs__control tabs__control_active" data-tab-id="fire">Горящие предложения</li>
+                        <li class="tabs__control" data-tab-id="all">Все предложения</li>
+                    </ul>
+                    <div class="tabs__tab tabs__tab_active" data-tab-id="fire">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-1.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-2.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-3.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-4.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__tab" data-tab-id="all">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-3.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-4.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-2.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <img class="card__img" src="img/dist/card-img-1.jpg" alt="Пакет включено почти всё">
+                                    <div class="card__text">
+                                        <span class="card__caption">Пакет включено почти всё</span>
+                                        <p class="card__description">Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		<script src="js/script.min.js"></script>
 	</body>

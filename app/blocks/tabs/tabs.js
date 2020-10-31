@@ -1,11 +1,3 @@
-function btn__click(e){
-    if(!e.target.classList.contains('btn') || e.target.tagName == "A") return false
-
-    alert('click')
-}
-
-
-document.addEventListener('click', btn__click)
 function tabs__click(e){
 
     if(!e.target.classList.contains('tabs__control')) return false
@@ -30,6 +22,3 @@ function tabs__click(e){
 }
 
 document.addEventListener('click', tabs__click)
-document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('loaded')
-})
