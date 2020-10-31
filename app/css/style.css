@@ -324,42 +324,6 @@ button {
   margin-left: 0px;
 }
 
-.hero {
-  position: relative;
-  padding-bottom: 96px;
-}
-
-.hero__bg {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 608px;
-  z-index: -1;
-  background-image: url("../img/dist/hero__bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-.hero__header {
-  margin-bottom: 64px;
-}
-
-.hero__text-content {
-  color: #fff;
-}
-
-.hero__caption {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
-.hero__description {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
 .card {
   text-decoration: none;
 }
@@ -391,39 +355,6 @@ button {
   line-height: 20px;
   /*1.54*/
   color: #000000;
-}
-
-.moon {
-  position: relative;
-}
-
-.moon::before {
-  content: '';
-  display: block;
-  width: 112.68%;
-  height: 112.68%;
-  left: -6.35%;
-  top: -5.63%;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.05;
-  border: 2px solid #FFFFFF;
-  border-radius: 100%;
-}
-
-.moon__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
-          box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
-  border-radius: 100%;
-}
-
-.section-title {
-  text-align: center;
-  color: #200142;
-  padding-bottom: 76px;
 }
 
 .header {
@@ -469,6 +400,75 @@ button {
 
 .header__btn {
   padding: 8px 12px;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.hero__bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 608px;
+  z-index: -1;
+  background-image: url("../img/dist/hero__bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.hero__header {
+  margin-bottom: 64px;
+}
+
+.hero__text-content {
+  color: #fff;
+}
+
+.hero__caption {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.hero__description {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.moon {
+  position: relative;
+}
+
+.moon::before {
+  content: '';
+  display: block;
+  width: 112.68%;
+  height: 112.68%;
+  left: -6.35%;
+  top: -5.63%;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.05;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+}
+
+.moon__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
+          box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
+  border-radius: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: #200142;
+  padding-bottom: 76px;
 }
 
 .tabs__controls {

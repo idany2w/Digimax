@@ -266,6 +266,72 @@ button {
   margin-left: 0px;
 }
 
+.card {
+  text-decoration: none;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.card__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /*1.71*/
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #5101A6;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /*1.54*/
+  color: #000000;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  display: block;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    max-width: 200px;
+  }
+}
+
+.header__logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.header__btn {
+  padding: 8px 12px;
+}
+
 .hero {
   position: relative;
   padding-bottom: 96px;
@@ -301,39 +367,6 @@ button {
   margin-bottom: 48px;
 }
 
-.card {
-  text-decoration: none;
-}
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 24px;
-}
-
-.card__caption {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  /*1.71*/
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #5101A6;
-}
-
-.card__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  /*1.54*/
-  color: #000000;
-}
-
 .moon {
   position: relative;
 }
@@ -364,39 +397,6 @@ button {
   text-align: center;
   color: #200142;
   padding-bottom: 76px;
-}
-
-.header {
-  display: block;
-  width: 100%;
-  padding: 40px 0px;
-}
-
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.header__logo {
-  display: block;
-  width: 100%;
-}
-
-@media screen and (min-width: 768px) {
-  .header__logo {
-    max-width: 200px;
-  }
-}
-
-.header__logo-img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.header__btn {
-  padding: 8px 12px;
 }
 
 .tabs__controls {
