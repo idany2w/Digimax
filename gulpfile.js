@@ -59,7 +59,7 @@ function css() {
 		.pipe(browserSync.stream()); //синхронизация браузера
 }
 function js() {
-	return src(js_src) //получаем файлы
+	return src(js_src, {allowEmpty: true}) //получаем файлы
 		.pipe(concat("script.js")) //объедиение подключенных js файлов в один с указанным именем
 		.pipe(dest("app/js/")) //выгружаем несжатый файл
 		.pipe(uglify()) //сжатие js файлов
