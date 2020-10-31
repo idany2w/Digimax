@@ -14,6 +14,7 @@ const rename = require("gulp-rename"); // переименовать файлы
 const browsersList = "last 10 years";
 
 const scss_src = [
+	"node_modules/@glidejs/glide/dist/css/glide.core.min.css",
 	"app/scss/_variables.scss",
 	"app/scss/**/*.scss",
 	"app/blocks/**/*.scss",
@@ -24,6 +25,7 @@ const css_src = [
 	"!app/css/style.min.css",
 ];
 const js_src = [
+	"node_modules/@glidejs/glide/dist/glide.min.js",
 	"app/blocks/**/*.js",
 	"app/js/**/*.js",
 	"!app/js/script.js",

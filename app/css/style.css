@@ -1,3 +1,97 @@
+.glide {
+  position: relative;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.glide * {
+  -webkit-box-sizing: inherit;
+     -moz-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+.glide__track {
+  overflow: hidden;
+}
+
+.glide__slides {
+  position: relative;
+  width: 100%;
+  list-style: none;
+  -webkit-backface-visibility: hidden;
+     -moz-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+     -moz-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -ms-touch-action: pan-Y;
+      touch-action: pan-Y;
+  overflow: hidden;
+  padding: 0;
+  white-space: nowrap;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+  will-change: transform;
+}
+
+.glide__slides--dragging {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.glide__slide {
+  width: 100%;
+  height: 100%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  white-space: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.glide__slide a {
+  -webkit-user-select: none;
+          user-select: none;
+  -webkit-user-drag: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.glide__arrows {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.glide__bullets {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.glide--rtl {
+  direction: rtl;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -230,6 +324,46 @@ button {
   margin-left: 0px;
 }
 
+.hero {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.hero__bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 608px;
+  z-index: -1;
+  background-image: url("../img/dist/hero__bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.hero__header {
+  margin-bottom: 64px;
+}
+
+.hero__text-content {
+  color: #fff;
+}
+
+.hero__caption {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.hero__description {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.card {
+  text-decoration: none;
+}
+
 .card__img {
   display: block;
   width: 100%;
@@ -257,6 +391,39 @@ button {
   line-height: 20px;
   /*1.54*/
   color: #000000;
+}
+
+.moon {
+  position: relative;
+}
+
+.moon::before {
+  content: '';
+  display: block;
+  width: 112.68%;
+  height: 112.68%;
+  left: -6.35%;
+  top: -5.63%;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.05;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+}
+
+.moon__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -webkit-box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
+          box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
+  border-radius: 100%;
+}
+
+.section-title {
+  text-align: center;
+  color: #200142;
+  padding-bottom: 76px;
 }
 
 .header {
@@ -302,75 +469,6 @@ button {
 
 .header__btn {
   padding: 8px 12px;
-}
-
-.hero {
-  position: relative;
-  padding-bottom: 96px;
-}
-
-.hero__bg {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 608px;
-  z-index: -1;
-  background-image: url("../img/dist/hero__bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-.hero__header {
-  margin-bottom: 64px;
-}
-
-.hero__text-content {
-  color: #fff;
-}
-
-.hero__caption {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
-.hero__description {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
-.moon {
-  position: relative;
-}
-
-.moon::before {
-  content: '';
-  display: block;
-  width: 112.68%;
-  height: 112.68%;
-  left: -6.35%;
-  top: -5.63%;
-  position: absolute;
-  z-index: 5;
-  opacity: 0.05;
-  border: 2px solid #FFFFFF;
-  border-radius: 100%;
-}
-
-.moon__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  -webkit-box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
-          box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
-  border-radius: 100%;
-}
-
-.section-title {
-  text-align: center;
-  color: #200142;
-  padding-bottom: 76px;
 }
 
 .tabs__controls {

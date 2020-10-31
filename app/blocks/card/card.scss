@@ -1,4 +1,6 @@
-.card{}
+.card{
+    text-decoration: none;
+}
 
 .card__img{
     display: block;
@@ -9,7 +11,8 @@
     margin-bottom: 24px;
 }
 
-.card__text{}
+.card__text{
+}
 
 .card__caption{
     font-family: $heading-font;
