@@ -1,7 +1,7 @@
 .btn{
     display: inline-block;
     background-color: $btn-bg_default;
-    color: $btn-text_default;
+    color: $accent-color;
     border-radius: 6px;
     font-weight: 900;
     font-size: 12px;
@@ -9,4 +9,25 @@
     letter-spacing: 1px; /*0.083em*/
     text-transform: uppercase;
     padding: 12px 16px;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    &_icon{
+        padding: 12px;
+        background: $accent-color;
+        border-radius: 68px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.btn__icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
+    &_play{
+        background-image: url(../img/dist/icons/play.svg);
+    }
 }

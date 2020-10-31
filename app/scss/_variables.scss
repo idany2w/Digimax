@@ -1,5 +1,6 @@
 $heading-font: 'Montserrat', sans-serif;
 $content-font: 'Roboto', sans-serif;
+$accent-color:  #5101A6;
 
 $btn-bg_default: #FFFFFF;
-$btn-text_default: #5101A6;
+$btn-text_default: $accent-color;

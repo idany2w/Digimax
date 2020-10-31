@@ -1,0 +1,34 @@
+.hero{
+    position: relative;
+    padding-bottom: 96px;
+}
+
+.hero__bg{
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 608px;
+    z-index: -1;
+    background-image: url('../img/dist/hero__bg.jpg');
+    background-size: cover;
+}
+
+.hero__header{
+    margin-bottom: 64px;
+}
+
+.hero__text-content{
+    color: #fff;
+}
+
+.hero__caption{
+    margin-top: 0px;
+    margin-bottom: 48px;
+}
+
+.hero__description{
+    margin-top: 0px;
+    margin-bottom: 48px;
+}

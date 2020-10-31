@@ -155,11 +155,17 @@ button {
   font: inherit;
 }
 
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
+}
+
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  display: block;
   width: 100%;
   padding: 40px 0px;
 }
@@ -204,4 +210,88 @@ button {
   /*0.083em*/
   text-transform: uppercase;
   padding: 12px 16px;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.btn_icon {
+  padding: 12px;
+  background: #5101A6;
+  border-radius: 68px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn__icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  pointer-events: none;
+}
+
+.btn__icon_play {
+  background-image: url(../img/dist/icons/play.svg);
+}
+
+.moon {
+  position: relative;
+}
+
+.moon::before {
+  content: '';
+  display: block;
+  width: 112.68%;
+  height: 112.68%;
+  left: -6.35%;
+  top: -5.63%;
+  position: absolute;
+  z-index: 5;
+  opacity: 0.05;
+  border: 2px solid #FFFFFF;
+  border-radius: 100%;
+}
+
+.moon__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
+  border-radius: 100%;
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.hero__bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 608px;
+  z-index: -1;
+  background-image: url("../img/dist/hero__bg.jpg");
+  background-size: cover;
+}
+
+.hero__header {
+  margin-bottom: 64px;
+}
+
+.hero__text-content {
+  color: #fff;
+}
+
+.hero__caption {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.hero__description {
+  margin-top: 0px;
+  margin-bottom: 48px;
 }

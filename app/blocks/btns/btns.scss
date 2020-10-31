@@ -1,0 +1,11 @@
+.btns{
+
+}
+
+.btns__item{
+    vertical-align: middle;
+    margin-left: 16px;
+    &:first-child{
+        margin-left: 0px;
+    }
+}

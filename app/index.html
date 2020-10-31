@@ -12,15 +12,40 @@
 	</head>
 
 	<body>
-		<header class="header">
-			<div class="container header__container">
-				<a class="header__logo">
-					<img src="img/dist/header__logo.svg" alt="" class="header__logo-img" />
-                </a>
-                <button class="btn header__btn">Закажите ваш билет</button>
-			</div>
-        </header>
-        <section id="hero"></section>
+        <section id="hero" class="hero">
+            <div class="hero__bg"></div>
+
+            <header class="header hero__header">
+                <div class="container header__container">
+                    <a class="header__logo" href="#home">
+                        <img src="img/dist/header__logo.svg" alt="" class="header__logo-img" />
+                    </a>
+                    <button class="btn header__btn">Закажите ваш билет</button>
+                </div>
+            </header>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-content hero__text-content">
+                            <h2 class="hero__caption">До луны и обратно</h2>
+                            <p class="hero__description">Задача организации, в особенности же курс на социально-ориентированный национальный проект позволяет оценить значение модели развития. </p>
+                        </div>
+                        <div class="btns hero__btns">
+                            <a href="#" class="btn btns__item">Подробнее о нас</a>
+                            <button class="btn btn_icon btns__item">
+                                <span class="btn__icon btn__icon_play"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="moon">
+                            <img class="moon__img" src="img/dist/moon.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 		<script src="js/script.min.js"></script>
 	</body>

@@ -6,6 +6,3 @@ function btn__click(e){
 
 
 document.addEventListener('click', btn__click)
-document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('loaded')
-})
