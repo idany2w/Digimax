@@ -1,5 +1,3 @@
-!function(e){var t=e.Element.prototype;"function"!=typeof t.matches&&(t.matches=t.msMatchesSelector||t.mozMatchesSelector||t.webkitMatchesSelector||function(e){for(var t=(this.document||this.ownerDocument).querySelectorAll(e),o=0;t[o]&&t[o]!==this;)++o;return Boolean(t[o])}),"function"!=typeof t.closest&&(t.closest=function(e){for(var t=this;t&&1===t.nodeType;){if(t.matches(e))return t;t=t.parentNode}return null})}(window);
-
 if (window.NodeList && !NodeList.prototype.forEach) {
     NodeList.prototype.forEach = function (callback, thisArg) {
         thisArg = thisArg || window;
@@ -8,6 +6,15 @@ if (window.NodeList && !NodeList.prototype.forEach) {
         }
     };
 }
+(function(ELEMENT) {
+    ELEMENT.matches = ELEMENT.matches || ELEMENT.mozMatchesSelector || ELEMENT.msMatchesSelector || ELEMENT.oMatchesSelector || ELEMENT.webkitMatchesSelector;
+    ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+        if (!this) return null;
+        if (this.matches(selector)) return this;
+        if (!this.parentElement) {return null}
+        else return this.parentElement.closest(selector)
+      };
+}(Element.prototype));
 
 /*!
  * Glide.js v3.4.1
@@ -93,6 +100,3 @@ function tabs__click(e){
 }
 
 document.addEventListener('click', tabs__click)
-document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('dom loaded')
-})

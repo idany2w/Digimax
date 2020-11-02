@@ -1,7 +1,7 @@
 var Glides = []
 
-document.addEventListener('DOMContentLoaded', ()=>{
-    document.querySelectorAll('.glide').forEach(e=>{
+document.addEventListener('DOMContentLoaded', function(){
+    document.querySelectorAll('.glide').forEach(function(e){
         Glides.push({
             glide: new Glide(e).mount({}),
             element: e
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
         let currTab = tabs.querySelector('.tabs__tab[data-tab-id='+currTabId+']');
         let currTabGlide = currTab.querySelector('.glide');
 
-        Glides.forEach(element=>{
+        Glides.forEach(function(element){
             if(element.element == currTabGlide){
                 element.glide.update({})
                 return
