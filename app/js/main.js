@@ -1,4 +1,3 @@
 document.addEventListener('DOMContentLoaded', ()=>{
-    new Glide('.glide').mount()
-
+    console.log('dom loaded')
 })

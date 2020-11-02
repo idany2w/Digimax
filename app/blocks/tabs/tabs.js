@@ -18,7 +18,6 @@ function tabs__click(e){
 
     currTabControl.classList.add('tabs__control_active');
     currTab.classList.add('tabs__tab_active');
-
 }
 
 document.addEventListener('click', tabs__click)

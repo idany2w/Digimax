@@ -1,0 +1,51 @@
+.glide__slides{
+    margin: 0px;
+}
+
+.glide__arrows{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: -80px;
+}
+
+.glide__arrow{
+    display: flex;
+    background: #F6F6FA;
+    border-radius: 6px;
+    width: 48px;
+    height: 48px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &--left{
+        background-image: url(../img/dist/icons/arrow-l.svg);
+        margin-right: 16px;
+    }
+    &--right{
+        background-image: url(../img/dist/icons/arrow-r.svg);
+    }
+}
+
+.glide__bullets{
+    padding: 40px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glide__bullet{
+    display: block;
+    width: 8px;
+    height: 8px;
+    background: #E0E0E0;
+    border-radius: 100%;     
+    &+.glide__bullet{
+        margin-left: 16px;
+    }
+    &--active{
+        background: $accent-color;
+    }
+}

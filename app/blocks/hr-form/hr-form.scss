@@ -1,0 +1,48 @@
+.hr-form{
+
+}
+
+.hr-form__form{
+
+}
+
+.hr-form__fieldset{
+    border: 1px solid $accent-color2;
+    border-radius: 6px;
+    padding: 8px 24px 24px 24px;
+}
+
+.hr-form__legend{
+    font-family: $content-font;
+    font-size: 12px;
+    line-height: 32px; /*2.67*/
+    color: #FFFFFF;
+    padding: 0px 16px;
+}
+
+.hr-form__fieldset-input{
+    border: none;
+    color: $accent-color2;
+    outline: none;
+    font-family: $content-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px; /*1.5*/
+    background: transparent;
+    &--submit{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 24px; /*1.5*/
+        margin-top: 16px;
+        padding: 24px 24px 24px 24px;
+        width: 100%;
+        color: #fff;
+        background-color: $accent-color;
+        border: 1px solid $accent-color;
+        border-radius: 6px;
+        cursor: pointer;
+    }
+}
+

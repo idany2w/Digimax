@@ -45,3 +45,9 @@ $gutter: 32px;
         max-width: 100%;
 	}
 }
+
+.col-2-offset{
+	@media screen and(min-width: 992px) {
+		margin:0 calc(25% + 32px);
+	}
+}
