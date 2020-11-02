@@ -229,6 +229,15 @@ button {
   font: inherit;
 }
 
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
+}
+
 .btn {
   display: inline-block;
   background-color: #FFFFFF;
@@ -265,48 +274,6 @@ button {
 
 .btn__icon_play {
   background-image: url(../img/dist/icons/play.svg);
-}
-
-.btns__item {
-  vertical-align: middle;
-  margin-left: 16px;
-}
-
-.btns__item:first-child {
-  margin-left: 0px;
-}
-
-.card {
-  text-decoration: none;
-}
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 24px;
-}
-
-.card__caption {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  /*1.71*/
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #5101A6;
-}
-
-.card__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  /*1.54*/
-  color: #000000;
 }
 
 .footer {
@@ -347,6 +314,39 @@ button {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.card {
+  text-decoration: none;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.card__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /*1.71*/
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #5101A6;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /*1.54*/
+  color: #000000;
 }
 
 .glide__slides {
@@ -472,6 +472,84 @@ button {
   margin-bottom: 48px;
 }
 
+.hr-form__fieldset {
+  border: 1px solid #BB6BD9;
+  border-radius: 6px;
+  padding: 8px 24px 50px 24px;
+  position: relative;
+  transition: border-color .25s;
+}
+
+.hr-form__fieldset--focus {
+  border-color: #fff;
+}
+
+.hr-form__legend {
+  font-family: Roboto,sans-serif;
+  font-size: 12px;
+  line-height: 32px;
+  color: #fff;
+  padding: 0 16px;
+  transition: opacity .05s, width .25s, padding .25s;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hr-form__legend--focus {
+  padding: 0px;
+  width: 0px;
+  opacity: 0;
+}
+
+.hr-form__fieldset-input {
+  border: none;
+  color: #BB6BD9;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /*1.5*/
+  background: transparent;
+  border: none;
+  color: #bb6bd9;
+  outline: 0;
+  font-family: Roboto,sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  background: 0 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 24px 24px 24px;
+}
+
+.hr-form__fieldset-input::placeholder {
+  color: #fff;
+}
+
+.hr-form__fieldset-input--submit {
+  position: static;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /*1.5*/
+  margin-top: 16px;
+  padding: 24px 24px 24px 24px;
+  width: 100%;
+  color: #fff;
+  background-color: #5101A6;
+  border: 2px solid #5101A6;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
 .moon {
   position: relative;
 }
@@ -496,50 +574,6 @@ button {
   height: auto;
   box-shadow: 24px 24px 80px rgba(56, 11, 103, 0.3);
   border-radius: 100%;
-}
-
-.hr-form__fieldset {
-  border: 1px solid #BB6BD9;
-  border-radius: 6px;
-  padding: 8px 24px 24px 24px;
-}
-
-.hr-form__legend {
-  font-family: "Roboto", sans-serif;
-  font-size: 12px;
-  line-height: 32px;
-  /*2.67*/
-  color: #FFFFFF;
-  padding: 0px 16px;
-}
-
-.hr-form__fieldset-input {
-  border: none;
-  color: #BB6BD9;
-  outline: none;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  /*1.5*/
-  background: transparent;
-}
-
-.hr-form__fieldset-input--submit {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 24px;
-  /*1.5*/
-  margin-top: 16px;
-  padding: 24px 24px 24px 24px;
-  width: 100%;
-  color: #fff;
-  background-color: #5101A6;
-  border: 1px solid #5101A6;
-  border-radius: 6px;
-  cursor: pointer;
 }
 
 .section-title {
