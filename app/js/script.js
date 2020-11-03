@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function(){
     document.addEventListener('click', function(e){
         if(!e.target.classList.contains('tabs__control')) return false
 
-        let currTabControl = e.target;
-        let currTabId = currTabControl.dataset.tabId;
-        let tabs = currTabControl.closest('.tabs');
-        let currTab = tabs.querySelector('.tabs__tab[data-tab-id='+currTabId+']');
-        let currTabGlide = currTab.querySelector('.glide');
+        var currTabControl = e.target;
+        var currTabId = currTabControl.getAttribute('data-tab-id');
+        var tabs = currTabControl.closest('.tabs');
+        var currTab = tabs.querySelector('.tabs__tab[data-tab-id='+currTabId+']');
+        var currTabGlide = currTab.querySelector('.glide');
 
         Glides.forEach(function(element){
             if(element.element == currTabGlide){
@@ -54,18 +54,25 @@ document.addEventListener('DOMContentLoaded', function(){
 document.addEventListener('click', function(e){
     if(!e.target.classList.contains('hr-form__fieldset-input')) return false
 
-    let input = e.target;
-    let fieldset = input.closest('.hr-form__fieldset');
-    let legend = fieldset.querySelector('.hr-form__legend');
-    
-    input.placeholder = legend.textContent;
+    var input = e.target;
+    var fieldset = input.closest('.hr-form__fieldset');
+    var legend = fieldset.querySelector('.hr-form__legend');
+
+    input.placeholder = ''
+    input.classList.add('hr-form__fieldset-input--focus')
     fieldset.classList.add('hr-form__fieldset--focus')
     legend.classList.add('hr-form__legend--focus')
 
     input.addEventListener('blur', function(){
-        input.placeholder = '';
-        fieldset.classList.remove('hr-form__fieldset--focus')
-        legend.classList.remove('hr-form__legend--focus')
+        if(!input.value){
+            input.placeholder = input.getAttribute('data-placeholder');
+
+
+            input.classList.remove('hr-form__fieldset-input--focus')
+            fieldset.classList.remove('hr-form__fieldset--focus')
+            legend.classList.remove('hr-form__legend--focus')
+        }
+
     }, {once:true})
 
 
@@ -74,14 +81,14 @@ function tabs__click(e){
 
     if(!e.target.classList.contains('tabs__control')) return false
 
-    let currTabControl = e.target;
-    let currTabId = currTabControl.dataset.tabId;
-    let tabs = currTabControl.closest('.tabs');
-    let activeTabControl = tabs.querySelector('.tabs__control.tabs__control_active');
-    let activeTabId = activeTabControl.dataset.tabId;
+    var currTabControl = e.target;
+    var currTabId = currTabControl.getAttribute('data-tab-id');
+    var tabs = currTabControl.closest('.tabs');
+    var activeTabControl = tabs.querySelector('.tabs__control.tabs__control_active');
+    var activeTabId = activeTabControl.getAttribute('data-tab-id');
 
-    let currTab = tabs.querySelector('.tabs__tab[data-tab-id='+currTabId+']');
-    let activeTab = tabs.querySelector('.tabs__tab.tabs__tab_active[data-tab-id='+activeTabId+']');
+    var currTab = tabs.querySelector('.tabs__tab[data-tab-id='+currTabId+']');
+    var activeTab = tabs.querySelector('.tabs__tab.tabs__tab_active[data-tab-id='+activeTabId+']');
 
     if(activeTabControl){
         activeTabControl.classList.remove('tabs__control_active');
@@ -93,6 +100,3 @@ function tabs__click(e){
 }
 
 document.addEventListener('click', tabs__click)
-document.addEventListener('DOMContentLoaded', ()=>{
-    console.log('dom loaded')
-})

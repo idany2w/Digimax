@@ -25,6 +25,7 @@ const css_src = [
 	"!app/css/style.min.css",
 ];
 const js_src = [
+	// "node_modules/ie-placeholder/index.js",
 	"node_modules/element-closest/browser.js",
 	"node_modules/nodelist-foreach-polyfill/index.js",
 	"node_modules/@glidejs/glide/dist/glide.min.js",
