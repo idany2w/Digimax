@@ -277,15 +277,6 @@ button {
   font: inherit;
 }
 
-.btns__item {
-  vertical-align: middle;
-  margin-left: 16px;
-}
-
-.btns__item:first-child {
-  margin-left: 0px;
-}
-
 .btn {
   display: inline-block;
   background-color: #FFFFFF;
@@ -334,6 +325,15 @@ button {
 
 .btn__icon_play {
   background-image: url(../img/dist/icons/play.svg);
+}
+
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
 }
 
 .card {
@@ -485,56 +485,6 @@ button {
   background: #5101A6;
 }
 
-.header {
-  display: block;
-  width: 100%;
-  padding: 40px 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .header__container {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-       -moz-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-       -moz-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-}
-
-.header__logo {
-  display: block;
-  max-width: 200px;
-}
-
-@media screen and (max-width: 768px) {
-  .header__logo {
-    margin-bottom: 20px;
-  }
-}
-
-.header__logo-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: none;
-}
-
-.header__btn {
-  padding: 8px 12px;
-  width: 100%;
-  text-align: center;
-}
-
 .hero {
   position: relative;
   padding-bottom: 96px;
@@ -587,6 +537,61 @@ button {
 .hero__description {
   margin-top: 0px;
   margin-bottom: 48px;
+}
+
+.header {
+  display: block;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+       -moz-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+       -moz-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.header__logo {
+  display: block;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.header__logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.header__btn {
+  padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__btn {
+    width: 100%;
+    text-align: center;
+  }
 }
 
 .hr-form__btn {

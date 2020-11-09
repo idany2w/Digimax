@@ -29,6 +29,8 @@
 
 .header__btn{
     padding: 8px 12px;
-    width: 100%;
-    text-align: center;
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        text-align: center;
+    }
 }
