@@ -1,0 +1,171 @@
+$blur-color: #fff;
+$hover-color: $accent-color2;
+$focus-color: $accent-color2;
+
+.pure-material-textfield-outlined {
+    position: relative;
+    display: inline-block;
+    padding-top: 6px;
+    font-family: $content-font;
+    overflow: hidden;
+    width: 100%;
+
+    /* Input, Textarea */
+    &__input{
+        font-weight: bold;
+    }
+    &__input,
+    &__textarea{
+        box-sizing: border-box;
+        margin: 0;
+        border: solid 1px; /* Safari */
+        border-color: $blur-color;
+        border-top-color: transparent;
+        border-radius: 6px;
+        padding: 15px 13px 15px;
+        padding: 24px 21px 24px;
+        width: 100%;
+        height: inherit;
+        color: $blur-color;
+        background-color: transparent;
+        box-shadow: none; /* Firefox */
+        font-family: $content-font;
+        font-size: 16px;
+        line-height: 24px;
+        caret-color: $blur-color;
+        transition: border 0.2s, box-shadow 0.2s;
+    }
+
+    /* Text */
+    &__text{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        border-color: $blur-color;
+        width: 100%;
+        max-height: 100%;
+        color: $blur-color;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 24px;
+        cursor: text;
+        transition: color 0.2s, font-size 0.2s, line-height 0.2s, font-weight 0.2s;
+
+        /* Corners */
+        &::before,
+        &::after{
+            content: "";
+            display: block;
+            box-sizing: border-box;
+            margin-top: 6px;
+            border-top: solid 1px;
+            border-top-color: $blur-color;
+            min-width: 10px;
+            height: 8px;
+            pointer-events: none;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        &::before{
+            margin-right: 16px;
+            border-left: solid 1px transparent;
+            border-radius: 6px 0;
+        }
+        &::after {
+            flex-grow: 1;
+            margin-left: 16px;
+            border-right: solid 1px transparent;
+            border-radius: 0 6px;
+        }
+    }
+
+    /* Hover */
+    &:hover{
+        /* Input, Textarea */
+        .pure-material-textfield-outlined__input,
+        .pure-material-textfield-outlined__textarea{
+            border-color: $hover-color;
+            border-top-color: transparent;
+        }
+        .pure-material-textfield-outlined__input:not(:focus):placeholder-shown,
+        .pure-material-textfield-outlined__textarea:not(:focus):placeholder-shown{
+            border-color: $hover-color;
+        }
+
+        /* Text */
+        .pure-material-textfield-outlined__text{
+            /* Corners */
+            &::before,
+            &::after{
+                border-top-color: $hover-color;
+            }
+        }
+    }
+
+    /* Placeholder-shown */
+    &__input:not(:focus):placeholder-shown,
+    &__textarea:not(:focus):placeholder-shown{
+        border-top-color: $blur-color;
+    }
+
+    &__input:not(:focus):placeholder-shown + &__text,
+    &__textarea:not(:focus):placeholder-shown + &__text{
+        font-size: 16px;
+        line-height: 90px;
+
+        &::before,
+        &::after{
+            border-top-color: transparent;
+        }
+    }
+
+    /* Focus */
+    &__input:focus,
+    &__textarea:focus{
+        border-color: $focus-color;
+        border-top-color: transparent;
+        outline: none;
+        color: $focus-color;
+    }
+
+    &__input:focus + &__text,
+    &__textarea:focus + &__text{
+        font-weight: normal;
+        line-height: 12px;
+        font-size: 12px;
+
+        &::before,
+        &::after{
+            border-top-color: $focus-color !important;
+        }
+    }
+
+    /* Faster transition in Safari for less noticable fractional font-size issue */
+    @media not all and (min-resolution:.001dpcm) {
+        @supports (-webkit-appearance:none) {
+            .pure-material-textfield-outlined__input,
+            .pure-material-textfield-outlined__input + .pure-material-textfield-outlined__text,
+            .pure-material-textfield-outlined__textarea,
+            .pure-material-textfield-outlined__textarea + .pure-material-textfield-outlined__text,
+            .pure-material-textfield-outlined__input + .pure-material-textfield-outlined__text::before,
+            .pure-material-textfield-outlined__input + .pure-material-textfield-outlined__text::after,
+            .pure-material-textfield-outlined__textarea + .pure-material-textfield-outlined__text::before,
+            .pure-material-textfield-outlined__textarea + .pure-material-textfield-outlined__text::after {
+                transition-duration: 0.1s;
+            }
+        }
+    }
+
+
+
+    &__input:not(:placeholder-shown),
+    &__textarea:not(:placeholder-shown){
+        color: $focus-color;
+    }
+    &__input:not(:placeholder-shown) + &__text,
+    &__textarea:not(:placeholder-shown) + &__text{
+        font-weight: normal;
+        line-height: 12px;
+        font-size: 12px;
+    }
+}

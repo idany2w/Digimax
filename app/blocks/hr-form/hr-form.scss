@@ -1,89 +1,16 @@
-.hr-form{
-
-}
-
-.hr-form__form{
-
-}
-
-.hr-form__fieldset{
-    border: 1px solid $accent-color2;
-    border-radius: 6px;
-    padding: 9px 24px 24px 24px;
-    position: relative;
-    overflow: hidden;
-    transition: border-color .25s;
-}
-.hr-form__fieldset--focus{
-    border-color: #fff;
-    padding: 24px;
-    margin-top: 16px;
-}
-
-.hr-form__legend {
-    font-family: Roboto,sans-serif;
-    font-size: 12px;
-    line-height: 32px;
-    color: #fff;
-    padding: 0 16px;
-    transition: opacity .125s, width .25s, padding .25s;
-    overflow: hidden;
-    pointer-events: none;
-    &--focus {
-        padding: 0px;
-        width: 0px;
-        opacity: 0;
-        height: 0px;
-    }
-}
-
-.hr-form__fieldset-input{
+.hr-form__btn{
+    width: 100%;
     border: none;
-    color: $accent-color2;
-    outline: none;
-    font-family: $content-font;
+    margin-top: 6px;
+    padding: 24px;
+    background-color: $accent-color;
+    border: 2px solid $accent-color;
+    color: #fff;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 24px; /*1.5*/
-    background: transparent;
-    border: none;
-    color: #bb6bd9;
-    outline: 0;
-    font-family: Roboto,sans-serif;
-    font-weight: 700;
-    font-size: 16px;
     line-height: 24px;
-    background: 0 0;
-    // position: absolute;
-    // left: 0;
-    // right: 0;
-    // bottom: 0;
-    // padding: 40px 24px 24px 24px;
-    width: 100%;
-
-    &::placeholder{
-        color: $accent-color2;
-    }
-    &--focus{
-        color: #fff;
-    }
-    &--filled{
-        color: #fff;
-    }
-    &--submit{
-        position: static;
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 24px; /*1.5*/
-        margin-top: 16px;
-        padding: 24px 24px 24px 24px;
-        width: 100%;
-        color: #fff;
-        background-color: $accent-color;
-        border: 2px solid $accent-color;
-        border-radius: 6px;
-        cursor: pointer;
-    }
+    /* identical to box height, or 150% */
+    text-transform: uppercase;
 }
