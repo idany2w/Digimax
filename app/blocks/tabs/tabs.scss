@@ -4,13 +4,15 @@
         margin-top: 0px;
         padding: 0px;
         list-style: none;
-    
-        display: flex;
-        min-height: 48px;
-        align-items: flex-end;
-        justify-content: flex-start;
-    
-        margin-bottom: 32px;
+        margin-bottom: 100px;
+        
+        @media screen and (min-width: 768px) {
+            display: flex;
+            min-height: 48px;
+            align-items: flex-end;
+            justify-content: flex-start;
+            margin-bottom: 32px;
+        }
     }
 
     &__control{
@@ -26,10 +28,14 @@
         border-bottom-style: solid;
         cursor: pointer;
         transition: color .25s ease;
-    
-        margin-left: 48px;
-        &:first-child{
-            margin-left: 0;
+        margin-bottom: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-left: 48px;
+            margin-bottom: 0px;
+            &:first-child{
+                margin-left: 0;
+            }
         }
     
         &_active{

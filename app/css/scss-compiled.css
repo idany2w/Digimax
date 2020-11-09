@@ -229,6 +229,15 @@ button {
   font: inherit;
 }
 
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
+}
+
 .btn {
   display: inline-block;
   background-color: #FFFFFF;
@@ -265,15 +274,6 @@ button {
 
 .btn__icon_play {
   background-image: url(../img/dist/icons/play.svg);
-}
-
-.btns__item {
-  vertical-align: middle;
-  margin-left: 16px;
-}
-
-.btns__item:first-child {
-  margin-left: 0px;
 }
 
 .card {
@@ -411,20 +411,22 @@ button {
   padding: 40px 0px;
 }
 
-.header__container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   display: block;
-  width: 100%;
+  max-width: 200px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .header__logo {
-    max-width: 200px;
+    margin-bottom: 20px;
   }
 }
 
@@ -437,6 +439,8 @@ button {
 
 .header__btn {
   padding: 8px 12px;
+  width: 100%;
+  text-align: center;
 }
 
 .hero {
@@ -450,14 +454,32 @@ button {
   left: 0;
   right: 0;
   top: 0;
-  height: 608px;
+  height: 100%;
   z-index: -1;
   background-image: url("../img/dist/hero__bg.jpg");
   background-size: cover;
 }
 
-.hero__header {
-  margin-bottom: 64px;
+@media screen and (min-width: 768px) {
+  .hero__bg {
+    height: 608px;
+  }
+}
+
+.hero__btns {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__btns {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__header {
+    margin-bottom: 64px;
+  }
 }
 
 .hero__text-content {
@@ -698,11 +720,17 @@ button {
   margin-top: 0px;
   padding: 0px;
   list-style: none;
-  display: flex;
-  min-height: 48px;
-  align-items: flex-end;
-  justify-content: flex-start;
-  margin-bottom: 32px;
+  margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+  .tabs__controls {
+    display: flex;
+    min-height: 48px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-bottom: 32px;
+  }
 }
 
 .tabs__control {
@@ -719,11 +747,17 @@ button {
   border-bottom-style: solid;
   cursor: pointer;
   transition: color .25s ease;
-  margin-left: 48px;
+  margin-bottom: 20px;
 }
 
-.tabs__control:first-child {
-  margin-left: 0;
+@media screen and (min-width: 768px) {
+  .tabs__control {
+    margin-left: 48px;
+    margin-bottom: 0px;
+  }
+  .tabs__control:first-child {
+    margin-left: 0;
+  }
 }
 
 .tabs__control_active {
