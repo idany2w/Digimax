@@ -229,6 +229,49 @@ button {
   font: inherit;
 }
 
+.card {
+  text-decoration: none;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.card__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /*1.71*/
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #5101A6;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /*1.54*/
+  color: #000000;
+}
+
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
+}
+
 .btn {
   display: inline-block;
   background-color: #FFFFFF;
@@ -265,49 +308,6 @@ button {
 
 .btn__icon_play {
   background-image: url(../img/dist/icons/play.svg);
-}
-
-.btns__item {
-  vertical-align: middle;
-  margin-left: 16px;
-}
-
-.btns__item:first-child {
-  margin-left: 0px;
-}
-
-.card {
-  text-decoration: none;
-}
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 24px;
-  border: none;
-}
-
-.card__caption {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  /*1.71*/
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #5101A6;
-}
-
-.card__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  /*1.54*/
-  color: #000000;
 }
 
 .footer {
@@ -405,6 +405,49 @@ button {
   background: #5101A6;
 }
 
+.header {
+  display: block;
+  width: 100%;
+  padding: 40px 0px;
+}
+
+@media screen and (min-width: 768px) {
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.header__logo {
+  display: block;
+  max-width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__logo {
+    margin-bottom: 20px;
+  }
+}
+
+.header__logo-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+.header__btn {
+  padding: 8px 12px;
+}
+
+@media screen and (max-width: 768px) {
+  .header__btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .hero {
   position: relative;
   padding-bottom: 96px;
@@ -456,49 +499,6 @@ button {
 .hero__description {
   margin-top: 0px;
   margin-bottom: 48px;
-}
-
-.header {
-  display: block;
-  width: 100%;
-  padding: 40px 0px;
-}
-
-@media screen and (min-width: 768px) {
-  .header__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-}
-
-.header__logo {
-  display: block;
-  max-width: 200px;
-}
-
-@media screen and (max-width: 768px) {
-  .header__logo {
-    margin-bottom: 20px;
-  }
-}
-
-.header__logo-img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border: none;
-}
-
-.header__btn {
-  padding: 8px 12px;
-}
-
-@media screen and (max-width: 768px) {
-  .header__btn {
-    width: 100%;
-    text-align: center;
-  }
 }
 
 .hr-form__btn {

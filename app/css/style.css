@@ -277,6 +277,49 @@ button {
   font: inherit;
 }
 
+.card {
+  text-decoration: none;
+}
+
+.card__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 24px;
+  border: none;
+}
+
+.card__caption {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  /*1.71*/
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  color: #5101A6;
+}
+
+.card__description {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /*1.54*/
+  color: #000000;
+}
+
+.btns__item {
+  vertical-align: middle;
+  margin-left: 16px;
+}
+
+.btns__item:first-child {
+  margin-left: 0px;
+}
+
 .btn {
   display: inline-block;
   background-color: #FFFFFF;
@@ -325,49 +368,6 @@ button {
 
 .btn__icon_play {
   background-image: url(../img/dist/icons/play.svg);
-}
-
-.btns__item {
-  vertical-align: middle;
-  margin-left: 16px;
-}
-
-.btns__item:first-child {
-  margin-left: 0px;
-}
-
-.card {
-  text-decoration: none;
-}
-
-.card__img {
-  display: block;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  border-radius: 8px;
-  margin-bottom: 24px;
-  border: none;
-}
-
-.card__caption {
-  font-family: "Montserrat", sans-serif;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 24px;
-  /*1.71*/
-  letter-spacing: 0.01em;
-  text-transform: uppercase;
-  color: #5101A6;
-}
-
-.card__description {
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 13px;
-  line-height: 20px;
-  /*1.54*/
-  color: #000000;
 }
 
 .footer {
@@ -485,60 +485,6 @@ button {
   background: #5101A6;
 }
 
-.hero {
-  position: relative;
-  padding-bottom: 96px;
-}
-
-.hero__bg {
-  display: block;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 100%;
-  z-index: -1;
-  background-image: url("../img/dist/hero__bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__bg {
-    height: 608px;
-  }
-}
-
-.hero__btns {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 768px) {
-  .hero__btns {
-    margin-bottom: 0px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero__header {
-    margin-bottom: 64px;
-  }
-}
-
-.hero__text-content {
-  color: #fff;
-}
-
-.hero__caption {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
-.hero__description {
-  margin-top: 0px;
-  margin-bottom: 48px;
-}
-
 .header {
   display: block;
   width: 100%;
@@ -592,6 +538,60 @@ button {
     width: 100%;
     text-align: center;
   }
+}
+
+.hero {
+  position: relative;
+  padding-bottom: 96px;
+}
+
+.hero__bg {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  z-index: -1;
+  background-image: url("../img/dist/hero__bg.jpg");
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__bg {
+    height: 608px;
+  }
+}
+
+.hero__btns {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero__btns {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__header {
+    margin-bottom: 64px;
+  }
+}
+
+.hero__text-content {
+  color: #fff;
+}
+
+.hero__caption {
+  margin-top: 0px;
+  margin-bottom: 48px;
+}
+
+.hero__description {
+  margin-top: 0px;
+  margin-bottom: 48px;
 }
 
 .hr-form__btn {
